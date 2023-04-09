@@ -25,7 +25,7 @@
         state: present
         name: apps-zakaria
         compose:
-          - /home/ubuntu/hari4/apps-bagas/docker-compose.yml
+          - /home/ubuntu/hari4/apps-bagas/docker-compose.yaml
       become: true
 
     - name: scale service
