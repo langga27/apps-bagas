@@ -13,11 +13,12 @@
         - python3
         - python3-docker
         - python3-pip
-
+      become: true
     - name: install module python
       ansible.builtin.pip:
         name: jsondiff
         state: present
+      become: true
 
     - name: deploy stack
       docker_stack:
@@ -25,6 +26,7 @@
         name: apps-zakaria
         compose:
           - /home/ubuntu/hari4/apps-bagas/docker-compose.yml
+      become: true
 
     - name: scale service
       shell: docker service scale apps-bagas_web=6
