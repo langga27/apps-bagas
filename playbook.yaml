@@ -1,5 +1,9 @@
 - name: running docker compose file as stack
   hosts: localhost
+  vars:
+    ansible_user: ubuntu
+    ansible_pass: ubuntu
+    ansible_become_pass: ubuntu
   tasks:
     - name: install python
       apt:
