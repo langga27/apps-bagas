@@ -1,7 +1,7 @@
 version: "3.9"
 services:
   web:
-    image: langga/apps-bagas
+    image: langga/apps-bagas:latest
     ports: ["83:80"]
     deploy:
       replicas: 2
