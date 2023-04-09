@@ -3,3 +3,5 @@ services:
   web:
     image: langga/apps-bagas
     ports: ["83:80"]
+    deploy:
+      replicas: 2
