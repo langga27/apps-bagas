@@ -23,7 +23,7 @@
     - name: deploy stack
       docker_stack:
         state: present
-        name: apps-zakaria
+        name: apps-bagas
         compose:
           - /home/ubuntu/hari4/apps-bagas/docker-compose.yaml
       become: true
